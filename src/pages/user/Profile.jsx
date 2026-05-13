@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { supabase } from '../../lib/supabase'
 
 function Profile() {
@@ -435,10 +436,8 @@ function Profile() {
         </button>
 
         {/* HUBUNGI ADMIN */}
-        <a
-          href="https://wa.me/6281234567890"
-          target="_blank"
-          rel="noreferrer"
+        <Link
+          to="/contact"
           style={{
             display: 'block',
             marginTop: '20px',
@@ -452,7 +451,7 @@ function Profile() {
           }}
         >
           Hubungi Admin
-        </a>
+        </Link>
 
       </div>
     </div>
